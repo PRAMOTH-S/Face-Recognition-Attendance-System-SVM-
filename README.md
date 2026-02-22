@@ -52,3 +52,27 @@ This project automates attendance tracking using **facial recognition technology
 ---
 
 ## 🧩 System Architecture
+
+---
+
+## ⚙️ Workflow
+
+1. Collect dataset (Name + Roll Number)  
+2. Detect and preprocess faces  
+3. Extract **128-D embeddings**  
+4. Train model using **SVM**  
+5. Perform real-time recognition and log attendance  
+
+---
+
+## 🛠️ Installation
+
+### 🔹 Prerequisites
+- Python **3.8 – 3.10**
+- Webcam
+
+### 🔹 Clone Repository
+
+```bash
+git clone https://github.com/your-username/face-recognition-attendance.git
+cd face-recognition-attendance
