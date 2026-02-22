@@ -1,31 +1,54 @@
 # 🎯 Face Recognition Attendance System (SVM)
 
-This project is a **Face Recognition based Attendance System** built using **Python + OpenCV + Machine Learning (SVM)**.  
-It detects faces from a webcam, extracts **128-D face embeddings**, trains an **SVM classifier**, and recognizes people in real-time to mark attendance.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![ML](https://img.shields.io/badge/Machine%20Learning-SVM-orange)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+A scalable and efficient **Face Recognition–based Attendance System** built using **Python, OpenCV, and Machine Learning (SVM)**.
+
+This system captures real-time video input, extracts **128-dimensional facial embeddings**, and uses a trained **Support Vector Machine (SVM)** classifier to recognize individuals and automatically record attendance.
 
 ---
 
-## ✨ Features
-- 📷 Real-time face recognition using webcam  
-- 🧠 **SVM Algorithm** for classification  
-- 🔍 128-D face embeddings for accurate identification  
-- 🧾 Stores student details (Name + RollNo)  
-- 📌 Marks attendance automatically in `attendance.csv`  
-- 💾 Saves trained model for reuse  
+## 📌 Table of Contents
+
+- [Overview](#-overview)
+- [Features](#-features)
+- [System Architecture](#-system-architecture)
+- [Workflow](#️-workflow)
+- [Installation](#️-installation)
+- [Key Libraries](#-key-libraries-used)
+- [Project Structure](#-project-structure)
+- [Usage](#️-usage)
+- [Configuration](#-configuration)
+- [Output](#-output)
+- [Performance Considerations](#-performance-considerations)
+- [Limitations](#️-limitations)
+- [Future Improvements](#-future-improvements)
+- [Troubleshooting](#-troubleshooting)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
-## ⚡ Workflow
-- Dataset Creation (Name + RollNo)
-- Face Detection + Pre-processing
-- Extract 128D Face Embeddings
-- Train Model using **SVM**
-- Real-time Recognition + Attendance Logging
+## 📖 Overview
+
+Traditional attendance systems are manual, time-consuming, and prone to errors.  
+This project automates attendance tracking using **facial recognition technology**, improving accuracy, efficiency, and reliability.
 
 ---
 
-## 🛠️ Installation
+## 🚀 Features
 
-```bash
-pip install opencv-python numpy face-recognition
-pip install sklearn
+- 📷 Real-time face detection using webcam  
+- 🧠 Machine Learning model using **Support Vector Machine (SVM)**  
+- 🔍 Accurate **128-D facial embeddings**  
+- 🧾 Stores user identity (Name & Roll Number)  
+- 📌 Automatic attendance logging (`attendance.csv`)  
+- 💾 Persistent trained model (no retraining required)  
+- ⚡ Fast and efficient pipeline  
+
+---
+
+## 🧩 System Architecture
